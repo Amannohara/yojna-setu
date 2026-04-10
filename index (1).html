@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Yojna Setu — Find and apply for Indian government schemes, scholarships, internships, and more. Bilingual guide with document checklist."/>
+  <title>Yojna Setu — Government Scheme Finder</title>
+
+  <!-- Fonts -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Styles -->
+  <link rel="stylesheet" href="main.css"/>
+</head>
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-container">
+    <a class="nav-logo" href="#logo.jpg" aria-label="Yojna Setu Home">
+      <span class="logo-icon" aria-hidden="true"><i class="fa-solid fa-dharmachakra"></i></span>
+      <span>Yojna<span class="accent">Setu</span></span>
+    </a>
+
+    <div class="nav-links" id="navLinks" role="menubar">
+      <a href="#home" role="menuitem" data-i18n="nav_home">Home</a>
+      <a href="#schemes" role="menuitem" data-i18n="nav_schemes">Schemes</a>
+      <a href="#about" role="menuitem" data-i18n="nav_about">About</a>
+
+      <!-- Language Switcher -->
+      <div class="lang-switcher" role="navigation" aria-label="Language selection">
+        <button class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          <span id="currentLangLabel">EN</span>
+          <i class="fa-solid fa-chevron-down" aria-hidden="true" style="font-size:0.65rem"></i>
+        </button>
+        <div class="lang-dropdown" role="menu">
+          <button class="lang-option active" data-lang="en" role="menuitem">
+            <span class="lang-flag">🇬🇧</span> English
+          </button>
+          <button class="lang-option" data-lang="hi" role="menuitem">
+            <span class="lang-flag">🇮🇳</span> हिंदी
+          </button>
+          <button class="lang-option" data-lang="bn" role="menuitem">
+            <span class="lang-flag">🇧🇩</span> বাংলা
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+<header class="hero" id="home" role="banner">
+  <div class="hero-bg-shapes" aria-hidden="true">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge" data-i18n="hero_badge">🇮🇳 India's Trusted Scheme Directory</div>
+    <h1 class="hero-title" data-i18n="hero_title">
+      Find the Right Government <span class="gradient-text">Scheme for You</span>
+    </h1>
+    <p class="hero-subtitle" data-i18n="hero_subtitle">
+      Scholarships, loans, internships, housing &amp; more — explained simply, with step-by-step guides.
+    </p>
+
+    <!-- Search Bar -->
+    <div class="search-wrapper" role="search">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+        <input
+          type="search"
+          id="searchInput"
+          class="search-input"
+          data-i18n-placeholder="search_placeholder"
+          placeholder="Search by scheme name, keyword, or eligibility…"
+          aria-label="Search schemes"
+          autocomplete="off"
+        />
+        <button class="search-btn" id="searchBtn" data-i18n="search_btn" aria-label="Search">Search</button>
+      </div>
+    </div>
+
+    <!-- Category Pills -->
+    <div class="category-pills" role="group" aria-label="Filter by category">
+      <button class="pill active" data-category="all" data-i18n="cat_all">All</button>
+      <button class="pill" data-category="scholarship">
+        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+        <span data-i18n="cat_scholarship">Scholarships</span>
+      </button>
+      <button class="pill" data-category="internship">
+        <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+        <span data-i18n="cat_internship">Internships</span>
+      </button>
+      <button class="pill" data-category="housing">
+        <i class="fa-solid fa-house" aria-hidden="true"></i>
+        <span data-i18n="cat_housing">Housing</span>
+      </button>
+      <button class="pill" data-category="agriculture">
+        <i class="fa-solid fa-wheat-awn" aria-hidden="true"></i>
+        <span data-i18n="cat_agriculture">Agriculture</span>
+      </button>
+      <button class="pill" data-category="startup">
+        <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+        <span data-i18n="cat_startup">Startups</span>
+      </button>
+      <button class="pill" data-category="women">
+        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+        <span data-i18n="cat_women">Women</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar" role="complementary" aria-label="Platform statistics">
+    <div class="stat">
+      <span class="stat-num">50+</span>
+      <span class="stat-label" data-i18n="stat_schemes">Schemes Listed</span>
+    </div>
+    <div class="stat-divider" aria-hidden="true"></div>
+    <div class="stat">
+      <span class="stat-num">28</span>
+      <span class="stat-label" data-i18n="stat_states">States Covered</span>
+    </div>
+    <div class="stat-divider" aria-hidden="true"></div>
+    <div class="stat">
+      <span class="stat-num">1M+</span>
+      <span class="stat-label" data-i18n="stat_beneficiaries">Beneficiaries</span>
+    </div>
+  </div>
+</header>
+
+<!-- =====================================================
+     MAIN — Filters + Cards
+===================================================== -->
+<main class="main" id="schemes">
+  <div class="main-container">
+
+    <!-- Sidebar Filters -->
+    <aside class="sidebar" id="sidebar" role="complementary" aria-label="Filter schemes">
+      <div class="sidebar-header">
+        <h3>
+          <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+          <span data-i18n="filter_title">Filters</span>
+        </h3>
+        <button class="clear-filters" id="clearFilters" data-i18n="clear_filters" aria-label="Clear all filters">
+          Clear All
+        </button>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-label" for="stateFilter" data-i18n="filter_state">State</label>
+        <select id="stateFilter" class="filter-select" aria-label="Filter by state">
+          <option value="all" data-i18n="opt_all_states">All States</option>
+          <option value="central">Central (All India)</option>
+          <option value="maharashtra">Maharashtra</option>
+          <option value="uttar-pradesh">Uttar Pradesh</option>
+          <option value="karnataka">Karnataka</option>
+          <option value="west-bengal">West Bengal</option>
+          <option value="rajasthan">Rajasthan</option>
+          <option value="tamil-nadu">Tamil Nadu</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-label" for="eligibilityFilter" data-i18n="filter_eligibility">Eligibility</label>
+        <select id="eligibilityFilter" class="filter-select" aria-label="Filter by eligibility">
+          <option value="all" data-i18n="opt_all_elig">All</option>
+          <option value="student">Student</option>
+          <option value="graduate">Graduate</option>
+          <option value="farmer">Farmer</option>
+          <option value="women">Women</option>
+          <option value="entrepreneur">Entrepreneur</option>
+          <option value="youth">Youth (18–35)</option>
+          <option value="ews">EWS</option>
+          <option value="lig">LIG</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label class="filter-label" for="categoryFilter" data-i18n="filter_category">Category</label>
+        <select id="categoryFilter" class="filter-select" aria-label="Filter by category">
+          <option value="all" data-i18n="opt_all_cat">All Categories</option>
+          <option value="scholarship">Scholarship</option>
+          <option value="internship">Internship</option>
+          <option value="housing">Housing</option>
+          <option value="finance">Finance</option>
+          <option value="agriculture">Agriculture</option>
+          <option value="women">Women</option>
+          <option value="startup">Startup</option>
+          <option value="skill">Skill Dev</option>
+        </select>
+      </div>
+
+      <button class="filter-close-btn" id="filterCloseBtn" aria-label="Close filters">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i> Close
+      </button>
+    </aside>
+
+    <!-- Results -->
+    <section class="results-section" aria-label="Scheme listings">
+      <div class="results-header">
+        <div class="results-meta">
+          <span id="resultCount" class="result-count" aria-live="polite" aria-atomic="true">Loading…</span>
+          <button class="filter-toggle-btn" id="filterToggleBtn" aria-label="Show filters" aria-expanded="false">
+            <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+            <span data-i18n="show_filters">Filters</span>
+          </button>
+        </div>
+        <select id="sortSelect" class="sort-select" aria-label="Sort schemes">
+          <option value="default">Sort: Default</option>
+          <option value="az">A → Z</option>
+          <option value="za">Z → A</option>
+        </select>
+      </div>
+
+      <!-- Skeleton -->
+      <div class="skeleton-grid" id="skeletonGrid" aria-hidden="true">
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+        <div class="skeleton-card"></div>
+      </div>
+
+      <!-- Cards -->
+      <div class="cards-grid" id="cardsGrid" role="list"></div>
+
+      <!-- Empty -->
+      <div class="empty-state" id="emptyState" style="display:none" aria-live="polite">
+        <i class="fa-solid fa-binoculars" aria-hidden="true"></i>
+        <p data-i18n="no_results">No schemes found. Try adjusting your filters or search.</p>
+        <button class="btn-outline" id="resetBtn" data-i18n="reset_btn">Reset Search</button>
+      </div>
+    </section>
+  </div>
+</main>
+
+<!-- =====================================================
+     ABOUT SECTION
+===================================================== -->
+<section class="about-section" id="about" aria-labelledby="aboutTitle">
+  <div class="about-inner">
+    <h2 id="aboutTitle" data-i18n="about_title">Why <span class="gradient-text">Yojna Setu</span>?</h2>
+    <div class="about-cards">
+      <div class="about-card">
+        <div class="about-icon" aria-hidden="true"><i class="fa-solid fa-bolt"></i></div>
+        <h4 data-i18n="about_fast">Instant Access</h4>
+        <p data-i18n="about_fast_desc">All schemes in one place — no government portal maze.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon" aria-hidden="true"><i class="fa-solid fa-globe"></i></div>
+        <h4 data-i18n="about_lang">3 Languages</h4>
+        <p data-i18n="about_lang_desc">Available in English, Hindi, and Bengali for wider reach.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon" aria-hidden="true"><i class="fa-solid fa-filter"></i></div>
+        <h4 data-i18n="about_filter">Smart Filters</h4>
+        <p data-i18n="about_filter_desc">Filter by state, category, and eligibility to find what fits you.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon" aria-hidden="true"><i class="fa-solid fa-square-check"></i></div>
+        <h4 data-i18n="about_checklist">Document Checklist</h4>
+        <p data-i18n="about_checklist_desc">Track your document readiness and download a PDF checklist.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <span class="footer-logo">Yojna<span class="accent">Setu</span></span>
+    <p class="footer-note" data-i18n="footer_note">
+      Built for every Indian. Data sourced from official government portals.
+    </p>
+    <p class="footer-copy" data-i18n="footer_copy">
+      © 2025 Yojna Setu. An initiative to bridge citizens with their rights.
+    </p>
+  </div>
+</footer>
+
+<!-- =====================================================
+     SCHEME DETAIL MODAL
+===================================================== -->
+<div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="modal-header-left" id="modalHeaderLeft"></div>
+      <button class="modal-close" id="modalClose" aria-label="Close scheme details">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<!-- =====================================================
+     DISCLAIMER MODAL (Apply Now)
+===================================================== -->
+<div class="disclaimer-overlay" id="disclaimerOverlay" role="alertdialog" aria-modal="true" aria-labelledby="disclaimerTitle">
+  <div class="disclaimer-box">
+    <div class="disclaimer-icon" aria-hidden="true">🔗</div>
+    <h3 class="disclaimer-title" id="disclaimerTitle" data-i18n="apply_disclaimer_title">
+      Redirecting to Government Website
+    </h3>
+    <p class="disclaimer-body" data-i18n="apply_disclaimer_body">
+      You are about to visit an official government website. Yojna Setu does not store any data you submit on external sites.
+    </p>
+    <div class="disclaimer-actions">
+      <button class="btn-proceed" id="disclaimerProceed" data-i18n="apply_proceed">
+        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        Proceed to Official Site
+      </button>
+      <button class="btn-cancel" id="disclaimerCancel" data-i18n="apply_cancel">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Sidebar Overlay -->
+<div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+<!-- =====================================================
+     SCRIPTS — Load in order
+===================================================== -->
+<!-- 1. Translator (must load first; auto-inits on DOMContentLoaded) -->
+<script src="translator.js"></script>
+<!-- 2. Guide component -->
+<script src="guide.js"></script>
+<!-- 3. Checklist component -->
+<script src="checklist.js"></script>
+<!-- 4. Chatbot component -->
+<script src="chatbot.js"></script>
+<!-- 5. Main app (wires everything together) -->
+<script src="app.js"></script>
+
+<!-- Inline: lang label update on switch -->
+<script>
+  window.addEventListener('ys:langChanged', function(e) {
+    const labels = { en:'EN', hi:'HI', bn:'BN' };
+    const el = document.getElementById('currentLangLabel');
+    if (el) el.textContent = labels[e.detail.lang] || 'EN';
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,408 @@
+[
+  {
+    "id": "pmay",
+    "name": "Pradhan Mantri Awas Yojana (PMAY)",
+    "nameHi": "प्रधानमंत्री आवास योजना",
+    "nameBn": "প্রধানমন্ত্রী আবাস যোজনা",
+    "category": "housing",
+    "state": "central",
+    "eligibility": ["ews", "lig", "mig"],
+    "eligibilityAge": { "min": 18, "max": 99 },
+    "eligibilityIncome": { "max": 1800000 },
+    "eligibilityGender": "all",
+    "eligibilityCategory": "all",
+    "description": "Affordable housing for economically weaker sections and low/mid-income groups across urban and rural India.",
+    "descriptionHi": "शहरी और ग्रामीण भारत में आर्थिक रूप से कमजोर वर्गों के लिए किफायती आवास।",
+    "descriptionBn": "শহর ও গ্রামীণ ভারতে দুর্বল অর্থনৈতিক বিভাগের জন্য সাশ্রয়ী মূল্যে আবাসন।",
+    "shortDesc": "Home loan subsidy & affordable housing for EWS/LIG/MIG families.",
+    "benefits": [
+      "Interest subsidy up to 6.5% on home loans",
+      "Houses constructed with earthquake-resistant features",
+      "Priority allotment for women beneficiaries",
+      "Direct benefit transfer to bank accounts"
+    ],
+    "documents": [
+      "Aadhaar Card (mandatory)",
+      "Income Certificate (issued by competent authority)",
+      "Bank Passbook / Account Statement (last 6 months)",
+      "Caste Certificate (if applicable)",
+      "Property Documents / Sale Agreement",
+      "Passport-size Photographs (2 copies)",
+      "Mobile number linked to Aadhaar"
+    ],
+    "applicationSteps": [
+      "Visit the official PMAY portal at pmaymis.gov.in",
+      "Click on 'Citizen Assessment' and select your applicable subsidy category",
+      "Enter your Aadhaar number and verify via OTP",
+      "Fill in personal details: name, address, occupation, income",
+      "Provide bank account details for DBT",
+      "Upload all required scanned documents",
+      "Review and submit the application",
+      "Note the Application Reference Number for tracking",
+      "Track status at pmaymis.gov.in using your reference number"
+    ],
+    "faqs": [
+      { "q": "Who is eligible for PMAY?", "a": "Indian citizens belonging to EWS (annual income up to ₹3L), LIG (₹3L–₹6L), MIG-I (₹6L–₹12L), and MIG-II (₹12L–₹18L) categories." },
+      { "q": "Can I apply if I already own a house?", "a": "No. The applicant or any family member should not own a pucca house anywhere in India." },
+      { "q": "Is there an application fee?", "a": "No, there is no application fee for PMAY." }
+    ],
+    "officialLink": "https://pmaymis.gov.in",
+    "icon": "fa-solid fa-house",
+    "color": "#2E86C1",
+    "tags": ["housing", "subsidy", "urban", "rural"]
+  },
+  {
+    "id": "pmkvy",
+    "name": "PM Kaushal Vikas Yojana (PMKVY)",
+    "nameHi": "प्रधानमंत्री कौशल विकास योजना",
+    "nameBn": "প্রধানমন্ত্রী কৌশল বিকাশ যোজনা",
+    "category": "skill",
+    "state": "central",
+    "eligibility": ["youth", "student"],
+    "eligibilityAge": { "min": 15, "max": 45 },
+    "eligibilityIncome": { "max": 9999999 },
+    "eligibilityGender": "all",
+    "eligibilityCategory": "all",
+    "description": "Free skill training and certification for Indian youth across 300+ job roles in 40+ sectors.",
+    "descriptionHi": "40+ क्षेत्रों में 300+ नौकरी की भूमिकाओं में भारतीय युवाओं के लिए मुफ्त कौशल प्रशिक्षण।",
+    "descriptionBn": "৪০+ খাতে ৩০০+ কাজের ভূমিকায় ভারতীয় যুবকদের জন্য বিনামূল্যে দক্ষতা প্রশিক্ষণ।",
+    "shortDesc": "Free skill training + ₹8,000 reward + certificate for youth aged 15–45.",
+    "benefits": [
+      "Free training across 300+ job roles",
+      "Government-recognized certification",
+      "Monetary reward of ₹8,000 on successful completion",
+      "Accident insurance coverage during training",
+      "Job placement assistance post-certification"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Class 10 / 12 Marksheet (if applicable)",
+      "Passport-size Photograph",
+      "Bank Account Details",
+      "Mobile Number (Aadhaar-linked)"
+    ],
+    "applicationSteps": [
+      "Visit skillindia.gov.in and click 'Find a Training Centre'",
+      "Select your state, district, and preferred skill sector",
+      "Choose a PMKVY-certified training centre near you",
+      "Register online or walk into the training centre",
+      "Submit Aadhaar and required documents",
+      "Attend training sessions as per schedule",
+      "Appear for the Sector Skill Council (SSC) assessment",
+      "Receive your PMKVY certificate and monetary reward"
+    ],
+    "faqs": [
+      { "q": "Is the training really free?", "a": "Yes, the training, assessment, and certification are completely free for all eligible candidates." },
+      { "q": "What sectors are covered?", "a": "IT, Healthcare, Construction, Retail, Beauty & Wellness, Automotive, Agriculture, and 30+ more sectors." },
+      { "q": "How long is the training?", "a": "Duration varies from 150–300 hours depending on the job role selected." }
+    ],
+    "officialLink": "https://www.skillindia.gov.in/",
+    "icon": "fa-solid fa-graduation-cap",
+    "color": "#27AE60",
+    "tags": ["skill", "training", "youth", "employment"]
+  },
+  {
+    "id": "pmmy",
+    "name": "PM Mudra Yojana (PMMY)",
+    "nameHi": "प्रधानमंत्री मुद्रा योजना",
+    "nameBn": "প্রধানমন্ত্রী মুদ্রা যোজনা",
+    "category": "finance",
+    "state": "central",
+    "eligibility": ["entrepreneur"],
+    "eligibilityAge": { "min": 18, "max": 65 },
+    "eligibilityIncome": { "max": 9999999 },
+    "eligibilityGender": "all",
+    "eligibilityCategory": "all",
+    "description": "Collateral-free business loans up to ₹10 lakh for micro and small enterprises.",
+    "descriptionHi": "सूक्ष्म और लघु उद्यमों के लिए ₹10 लाख तक का बिना गारंटी व्यवसाय ऋण।",
+    "descriptionBn": "ক্ষুদ্র ও ছোট উদ্যোগের জন্য ₹১০ লক্ষ পর্যন্ত জামানত-মুক্ত ব্যবসায়িক ঋণ।",
+    "shortDesc": "Collateral-free business loans up to ₹10 lakh — Shishu, Kishore, Tarun tiers.",
+    "benefits": [
+      "No collateral required",
+      "Shishu: up to ₹50,000 | Kishore: ₹50K–₹5L | Tarun: ₹5L–₹10L",
+      "Low interest rates per RBI guidelines",
+      "Coverage under Credit Guarantee Fund",
+      "Available at all banks, NBFCs, and MFIs"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Business Registration Certificate",
+      "Last 6 months Bank Statement",
+      "Business Plan / Quotation for equipment",
+      "Passport-size Photographs (2 copies)",
+      "Address Proof (Utility Bill / Rent Agreement)"
+    ],
+    "applicationSteps": [
+      "Identify which Mudra loan category fits your need (Shishu/Kishore/Tarun)",
+      "Prepare your business plan and collect all documents",
+      "Visit your nearest bank branch, NBFC, or MFI",
+      "Request the Mudra loan application form",
+      "Fill the form and attach all required documents",
+      "Bank/NBFC evaluates your application within 7–30 days",
+      "Loan sanctioned — funds transferred to your account"
+    ],
+    "faqs": [
+      { "q": "Do I need a business plan?", "a": "For Shishu loans, a simple purpose statement is enough. Kishore and Tarun require a detailed business plan." },
+      { "q": "Can women entrepreneurs get a lower interest rate?", "a": "Yes, many banks offer preferential interest rates (0.25%–0.5% lower) for women borrowers under MUDRA." },
+      { "q": "What if my loan application is rejected?", "a": "You can approach SIDBI's regional office or contact the MUDRA helpline at 1800-180-1111." }
+    ],
+    "officialLink": "https://www.mudra.org.in/",
+    "icon": "fa-solid fa-coins",
+    "color": "#F39C12",
+    "tags": ["loan", "business", "entrepreneur", "finance"]
+  },
+  {
+    "id": "nsp",
+    "name": "National Scholarship Portal (NSP)",
+    "nameHi": "राष्ट्रीय छात्रवृत्ति पोर्टल",
+    "nameBn": "জাতীয় বৃত্তি পোর্টাল",
+    "category": "scholarship",
+    "state": "central",
+    "eligibility": ["student"],
+    "eligibilityAge": { "min": 6, "max": 35 },
+    "eligibilityIncome": { "max": 800000 },
+    "eligibilityGender": "all",
+    "eligibilityCategory": "all",
+    "description": "One-stop platform for 50+ central and state scholarship schemes for students from Class 1 to PhD.",
+    "descriptionHi": "कक्षा 1 से पीएचडी तक के छात्रों के लिए 50+ केंद्र और राज्य छात्रवृत्ति योजनाओं का एकल पोर्टल।",
+    "descriptionBn": "ক্লাস ১ থেকে পিএইচডি পর্যন্ত শিক্ষার্থীদের জন্য ৫০+ কেন্দ্র ও রাজ্য বৃত্তি প্রকল্পের একক পোর্টাল।",
+    "shortDesc": "50+ scholarships from Class 1 to PhD — single application, direct DBT.",
+    "benefits": [
+      "Pre-matric scholarships for Classes 1–10",
+      "Post-matric scholarships for Classes 11–PhD",
+      "Scholarships for SC/ST/OBC/Minority/Merit categories",
+      "Direct Benefit Transfer to bank account",
+      "Single registration for multiple schemes"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Previous Year Marksheet / Certificate",
+      "Income Certificate (family income)",
+      "Caste Certificate (SC/ST/OBC if applicable)",
+      "Bank Account Passbook",
+      "Institution's Bonafide Certificate",
+      "Passport-size Photograph",
+      "Fee Receipt from Institution"
+    ],
+    "applicationSteps": [
+      "Visit scholarships.gov.in and click 'New Registration'",
+      "Select academic year and enter Aadhaar number",
+      "Verify your identity via OTP sent to Aadhaar-linked mobile",
+      "Set a password and complete your profile",
+      "Fill academic details: institution, course, marks",
+      "Enter family income and bank account details",
+      "Upload all scanned documents (PDF/JPEG)",
+      "Review and submit — note your Application ID",
+      "Track renewal and status on the portal"
+    ],
+    "faqs": [
+      { "q": "Can I apply for multiple scholarships?", "a": "Yes, NSP allows applying to multiple schemes in a single registration, subject to eligibility." },
+      { "q": "When does the application window open?", "a": "Generally from July–November each academic year. Check the portal for current deadlines." },
+      { "q": "What happens if I miss the deadline?", "a": "You cannot apply after the deadline. Watch for portal notifications for reopening windows." }
+    ],
+    "officialLink": "https://scholarships.gov.in/",
+    "icon": "fa-solid fa-book-open",
+    "color": "#8E44AD",
+    "tags": ["scholarship", "education", "student", "DBT"]
+  },
+  {
+    "id": "pmkisan",
+    "name": "PM Kisan Samman Nidhi",
+    "nameHi": "प्रधानमंत्री किसान सम्मान निधि",
+    "nameBn": "প্রধানমন্ত্রী কিষাণ সম্মান নিধি",
+    "category": "agriculture",
+    "state": "central",
+    "eligibility": ["farmer"],
+    "eligibilityAge": { "min": 18, "max": 99 },
+    "eligibilityIncome": { "max": 9999999 },
+    "eligibilityGender": "all",
+    "eligibilityCategory": "all",
+    "description": "₹6,000/year direct income support to all farmer families, paid in 3 installments of ₹2,000.",
+    "descriptionHi": "सभी किसान परिवारों को ₹6,000/वर्ष प्रत्यक्ष आय सहायता, ₹2,000 की 3 किश्तों में।",
+    "descriptionBn": "সকল কৃষক পরিবারকে ₹৬,০০০/বছর প্রত্যক্ষ আয় সহায়তা, ₹২,০০০-এর ৩টি কিস্তিতে।",
+    "shortDesc": "₹6,000/year in 3 installments for all landholding farmers — direct DBT.",
+    "benefits": [
+      "₹6,000 per year in 3 equal installments",
+      "Directly transferred to bank account (DBT)",
+      "All landholding farmer families are eligible",
+      "No application fee",
+      "Can be linked with Kisan Credit Card"
+    ],
+    "documents": [
+      "Aadhaar Card (mandatory)",
+      "Land Ownership Documents / Khata / Patta",
+      "Bank Account Passbook",
+      "Mobile Number (Aadhaar-linked)"
+    ],
+    "applicationSteps": [
+      "Visit pmkisan.gov.in and click 'Farmer Registration'",
+      "Select your state and enter Aadhaar number",
+      "Verify via OTP and fill personal details",
+      "Enter land ownership details (survey number, area)",
+      "Provide bank account number and IFSC code",
+      "Submit — registration is approved by local Patwari/revenue officer",
+      "After approval, installments are credited every 4 months",
+      "Track payment via 'Beneficiary Status' on the portal"
+    ],
+    "faqs": [
+      { "q": "What if a farmer died — can the family receive benefits?", "a": "The surviving spouse (widow) can apply by updating the beneficiary name through the local revenue office." },
+      { "q": "My eKYC is pending — will I get the installment?", "a": "No. eKYC is mandatory. Complete it at the PM-KISAN portal or at the nearest CSC." },
+      { "q": "I'm a tenant farmer — am I eligible?", "a": "No. Only landholding farmer families in the government land records are eligible." }
+    ],
+    "officialLink": "https://pmkisan.gov.in/",
+    "icon": "fa-solid fa-wheat-awn",
+    "color": "#229954",
+    "tags": ["farmer", "agriculture", "income support", "DBT"]
+  },
+  {
+    "id": "pminternship",
+    "name": "PM Internship Scheme",
+    "nameHi": "पीएम इंटर्नशिप योजना",
+    "nameBn": "পিএম ইন্টার্নশিপ প্রকল্প",
+    "category": "internship",
+    "state": "central",
+    "eligibility": ["graduate", "youth"],
+    "eligibilityAge": { "min": 21, "max": 24 },
+    "eligibilityIncome": { "max": 800000 },
+    "eligibilityGender": "all",
+    "eligibilityCategory": "all",
+    "description": "12-month paid internship at India's top 500 companies with ₹5,000/month stipend for youth aged 21–24.",
+    "descriptionHi": "21–24 वर्ष के युवाओं के लिए शीर्ष 500 कंपनियों में 12 महीने की इंटर्नशिप, ₹5,000/माह स्टाइपेंड।",
+    "descriptionBn": "২১-২৪ বছর বয়সী যুবকদের জন্য শীর্ষ ৫০০ কোম্পানিতে ১২ মাসের ইন্টার্নশিপ, মাসিক ₹৫,০০০।",
+    "shortDesc": "12-month paid internship at top 500 companies — ₹5,000/month + ₹6,000 grant.",
+    "benefits": [
+      "₹5,000/month stipend (₹4,500 Govt + ₹500 Company)",
+      "₹6,000 one-time grant for incidental expenses",
+      "PM Jeevan Jyoti Bima + PM Suraksha Bima coverage",
+      "Placement in sectors like IT, Manufacturing, BFSI, Infra",
+      "Certificate of completion recognized nationwide"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "PAN Card",
+      "Graduation Certificate / Provisional Certificate",
+      "Bank Account Details",
+      "Passport-size Photograph",
+      "Income Certificate of family"
+    ],
+    "applicationSteps": [
+      "Register at pminternship.mca.gov.in with Aadhaar",
+      "Complete your profile: academic background, skills, preferences",
+      "Browse internship opportunities by sector and location",
+      "Apply to up to 5 internship positions of your choice",
+      "Wait for company shortlisting (you'll be notified by email/SMS)",
+      "Accept the internship offer within the given deadline",
+      "Complete joining formalities with the company",
+      "Receive stipend monthly in your bank account"
+    ],
+    "faqs": [
+      { "q": "Can engineering graduates apply?", "a": "Yes, but IIT/IIM graduates are not eligible. Only candidates from non-premier institutions qualify." },
+      { "q": "Can I work part-time during the internship?", "a": "No. The internship is a full-time 12-month commitment." },
+      { "q": "What if the company terminates the internship early?", "a": "You can re-apply on the portal for a new internship opportunity." }
+    ],
+    "officialLink": "https://pminternship.mca.gov.in/",
+    "icon": "fa-solid fa-briefcase",
+    "color": "#E74C3C",
+    "tags": ["internship", "youth", "employment", "stipend"]
+  },
+  {
+    "id": "bbbp",
+    "name": "Beti Bachao Beti Padhao",
+    "nameHi": "बेटी बचाओ बेटी पढ़ाओ",
+    "nameBn": "বেটি বাঁচাও বেটি পড়াও",
+    "category": "women",
+    "state": "central",
+    "eligibility": ["women", "student"],
+    "eligibilityAge": { "min": 0, "max": 18 },
+    "eligibilityIncome": { "max": 9999999 },
+    "eligibilityGender": "female",
+    "eligibilityCategory": "all",
+    "description": "Promotes welfare, education, and protection of the girl child through convergent action across ministries.",
+    "descriptionHi": "बालिकाओं के कल्याण, शिक्षा और संरक्षण को बढ़ावा देने के लिए मंत्रालयों में समन्वित कार्रवाई।",
+    "descriptionBn": "মন্ত্রণালয়গুলির মধ্যে সমন্বিত পদক্ষেপের মাধ্যমে কন্যাশিশুর কল্যাণ, শিক্ষা ও সুরক্ষা প্রসার।",
+    "shortDesc": "Girl child protection + Sukanya Samriddhi Account with high-interest savings.",
+    "benefits": [
+      "Sukanya Samriddhi Account with 8%+ interest rate",
+      "Conditional cash transfers for girl child education",
+      "Free medical care and immunization",
+      "Scholarships and free hostel for girls",
+      "Awareness campaigns against female foeticide"
+    ],
+    "documents": [
+      "Girl Child's Birth Certificate",
+      "Aadhaar Card of Parents",
+      "Parent / Guardian ID Proof",
+      "Bank Account details (for SSA)",
+      "Proof of Residence"
+    ],
+    "applicationSteps": [
+      "Open a Sukanya Samriddhi Account at any post office or bank",
+      "Visit local Anganwadi centre for registration under BBBP",
+      "Provide birth certificate, parents' Aadhaar and address proof",
+      "Enroll girl child in a government school for education benefits",
+      "Receive conditional cash benefits in Aadhaar-linked bank account",
+      "Sukanya Samriddhi matures when girl turns 21"
+    ],
+    "faqs": [
+      { "q": "What is the minimum deposit for Sukanya Samriddhi?", "a": "Minimum ₹250/year, maximum ₹1.5 lakh/year. Account matures when the girl turns 21." },
+      { "q": "Can a single parent open a SSA?", "a": "Yes, single parents (mother or father) can open and operate the account." },
+      { "q": "Can I open SSA for two daughters?", "a": "Yes, up to two SSAs are allowed per family (three in case of twins/triplets)." }
+    ],
+    "officialLink": "https://wcd.nic.in/bbbp-schemes",
+    "icon": "fa-solid fa-heart",
+    "color": "#E91E8C",
+    "tags": ["women", "girl child", "education", "savings"]
+  },
+  {
+    "id": "startup-india",
+    "name": "Startup India Seed Fund",
+    "nameHi": "स्टार्टअप इंडिया सीड फंड",
+    "nameBn": "স্টার্টআপ ইন্ডিয়া সিড ফান্ড",
+    "category": "startup",
+    "state": "central",
+    "eligibility": ["entrepreneur", "graduate"],
+    "eligibilityAge": { "min": 18, "max": 50 },
+    "eligibilityIncome": { "max": 9999999 },
+    "eligibilityGender": "all",
+    "eligibilityCategory": "all",
+    "description": "Financial assistance up to ₹20L for POC and ₹50L for product trials for early-stage DPIIT-recognized startups.",
+    "descriptionHi": "प्रारंभिक चरण के DPIIT-मान्यता प्राप्त स्टार्टअप के लिए POC हेतु ₹20L और उत्पाद परीक्षण हेतु ₹50L।",
+    "descriptionBn": "প্রাথমিক পর্যায়ের DPIIT-স্বীকৃত স্টার্টআপের জন্য POC-এ ₹২০L এবং পণ্য পরীক্ষায় ₹৫০L।",
+    "shortDesc": "Up to ₹20L grant for POC + ₹50L for product launch — DPIIT startups only.",
+    "benefits": [
+      "Grants up to ₹20 lakh for proof-of-concept",
+      "Debt/convertible debentures up to ₹50 lakh for market entry",
+      "Mentorship from DPIIT-recognized incubators",
+      "Investor networking and pitch opportunities",
+      "Tax exemptions under Section 80-IAC"
+    ],
+    "documents": [
+      "DPIIT Startup Recognition Certificate",
+      "Incorporation Certificate (MCA registered)",
+      "Founders' Aadhaar & PAN",
+      "Pitch Deck (PDF)",
+      "Financial Projections (3-year)",
+      "Bank Account Details of the Startup"
+    ],
+    "applicationSteps": [
+      "Register your startup on startupindia.gov.in and get DPIIT recognition",
+      "Visit seedfund.startupindia.gov.in",
+      "Browse the list of empaneled incubators",
+      "Apply to an incubator of your choice with pitch deck",
+      "Incubator's Experts Committee evaluates the application",
+      "If shortlisted, present to the committee in person or virtually",
+      "Sign grant agreement with the incubator upon selection",
+      "Receive disbursement in milestones as per agreement"
+    ],
+    "faqs": [
+      { "q": "Does my startup need to be incorporated?", "a": "Yes, your startup must be incorporated and DPIIT-recognized before applying." },
+      { "q": "Can I apply to multiple incubators?", "a": "Yes, but you can only receive the grant from one incubator." },
+      { "q": "Is there an equity stake taken by the government?", "a": "No equity is taken for grants. For debt instruments, conversion terms are defined in the agreement." }
+    ],
+    "officialLink": "https://seedfund.startupindia.gov.in/",
+    "icon": "fa-solid fa-rocket",
+    "color": "#FF6B00",
+    "tags": ["startup", "entrepreneur", "grant", "innovation"]
+  }
+]
